@@ -1,0 +1,19 @@
+{
+  "name": "ssr-react",
+  "version": "1.0.0",
+  "description": "A demo app to show ssr , CI/CD pipeline using github actions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulm2492/ssr-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulm2492/ssr-react/issues"
+  },
+  "homepage": "https://github.com/rahulm2492/ssr-react#readme"
+}
