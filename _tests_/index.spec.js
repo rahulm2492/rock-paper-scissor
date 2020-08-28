@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 
-import Index from './index';
+import Index from '../pages/index';
 
 /** @test {Title Component} */
 describe('Title Component', () => {
