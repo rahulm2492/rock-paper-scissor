@@ -7,6 +7,6 @@ describe('Title Component', () => {
   it('should render without crashing', () => {
     const wrapper = mount(<Index label="test" />);
 
-    expect(wrapper.find('h')).toHaveLength(1);
+    expect(wrapper.find('h1')).toHaveLength(1);
   });
 });
