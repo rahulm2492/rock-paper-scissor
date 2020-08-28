@@ -1,5 +1,5 @@
 export default () => (
     <div>
-      <p>Hello Next.js</p>
+      <h1>Hello Next.js</h1>
     </div>
   )
