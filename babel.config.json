@@ -11,6 +11,11 @@
       "presets": [
         "next/babel"
       ]
+    },
+    "prod": {
+      "presets": [
+        "next/babel"
+      ]
     }
   }
 }
