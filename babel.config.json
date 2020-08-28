@@ -12,10 +12,13 @@
         "next/babel"
       ]
     },
-    "prod": {
+    "production": {
       "presets": [
         "next/babel"
       ]
     }
-  }
+  },
+  "plugins":[
+    "@babel/plugin-transform-react-jsx"
+  ]
 }
