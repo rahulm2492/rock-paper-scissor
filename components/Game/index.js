@@ -1,7 +1,7 @@
 import React, {  useState, useEffect } from 'react';
 import styles from './Games.module.scss';
 import Modes from '../Modes';
-import {getComputerWeapon, getResult} from '../../src/gameLogic';
+import {getComputerWeapon, getResult} from '../../utils/gameLogic';
 import Player from '../Player';
  import WeaponList from '../WeaponsList';
 // import Result from './components/Result';
