@@ -1,0 +1,19 @@
+
+
+.weaponContainer{
+   width: 30%;
+  display: inline-block;
+    div {
+        width : 100%;
+        border-radius: 50%;
+        position: relative;
+        height: 200px;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+        }
+    }
+}
