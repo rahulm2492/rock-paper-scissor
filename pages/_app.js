@@ -1,5 +1,5 @@
 import Amplify, {Auth} from 'aws-amplify';
-import awsconfig from '../utils/aws-exports';
+import awsconfig from '../utils/aws-exports.js';
 Amplify.configure(awsconfig);
 
 function MyApp({ Component, pageProps }) {
