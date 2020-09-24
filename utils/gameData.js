@@ -15,6 +15,7 @@ export default {
       icon: "scissors.svg",
       label: "Scissors",
     },
+    
   ],
   modes: [
     {

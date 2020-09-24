@@ -8,7 +8,6 @@ const App = (props) => {
   console.log('check', props);
   return (
   <>
-    Let's Play
     <Game data={gameData}/>
     <AmplifySignOut />
     

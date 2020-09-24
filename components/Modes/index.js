@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import styles from './Modes.module.scss';
 
 const Modes = ({ currentMode, onToggleMode }) => (
-	<div className={styles.modes}>
+	<div className={styles.Modes}>
 		<span className="label">{currentMode.label}</span><br />
 		<button
 			onClick={onToggleMode}

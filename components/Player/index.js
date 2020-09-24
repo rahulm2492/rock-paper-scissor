@@ -6,15 +6,14 @@ import Weapon from '../Weapons';
 const Player = ({ label, weapon, loading, score }) => (
 	<div className={styles.Player}>
 		<div>
-			<span className="label">{label}</span>
+			<span className={styles.label}>{label}</span>
+			<span className={styles.score}>Score: {score} PT{score > 1 && 'S'}</span>
 		</div>
-		{weapon && <Weapon
+		{<div className={styles.image}><Weapon
 			weapon={weapon}
-			loading={loading}
-		/>}
-		<div>
-			<span className="score">{score} PT{score > 1 && 'S'}</span>
-		</div>
+			loading={!weapon}
+		/></div>}
+		
 	</div>
 );
 

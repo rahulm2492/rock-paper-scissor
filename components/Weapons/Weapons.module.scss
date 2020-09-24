@@ -1,10 +1,9 @@
 
 
 .weaponContainer{
-   width: 30%;
-  display: inline-block;
+   width: 100%;
+   text-align: center;
     div {
-        width : 100%;
         border-radius: 50%;
         position: relative;
         height: 200px;
@@ -15,5 +14,10 @@
             transform: translate(-50%, -50%);
             width: 50%;
         }
+        
     }
 }
+.loading{
+    border: 1px dotted black;
+}
+

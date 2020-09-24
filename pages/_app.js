@@ -3,7 +3,6 @@ import awsconfig from '../utils/aws-exports';
 Amplify.configure(awsconfig);
 
 function MyApp({ Component, pageProps }) {
-    console.log('testing', Component, pageProps);
     return <Component Auth={Auth}/>
   }
   
