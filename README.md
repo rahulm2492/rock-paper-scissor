@@ -1,4 +1,4 @@
-# ssr-react
+# Rock-Paper-Scissor
 App to demonstrate CI CD using github workflows, deployment using vercel and next, session management using AMS amplify.
 
 Tech Stack: Next, Vercel, AWS Amplify Login, React
