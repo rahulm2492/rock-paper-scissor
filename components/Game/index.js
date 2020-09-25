@@ -7,7 +7,7 @@ import WeaponList from "../WeaponsList";
 
 
 const Game = (props) => {
-  const { weapons, modes } = props.data;
+  const { weapons, modes } = props?.data ?? {weapons:[], modes:[]};
   const getComputerMove = getComputerWeapon(weapons.length);
   const getGameResult = getResult(weapons);
 
@@ -19,14 +19,13 @@ const Game = (props) => {
   const [score1, setScore1] = useState(0);
   const [score2, setScore2] = useState(0);
 
-  const { player1Label, player2Label } = modes[currentMode];
+  const { player1Label, player2Label } = modes[currentMode] ?? {};
 
   useEffect(() => {
     const result = getGameResult(player1Weapon, player2Weapon);
     result == 1 && setScore1(score1 + 1);
 	result == 0 && setScore2(score2 + 1);
-	setGameCounter(gameRound+1);
-  }, [player1Weapon, player2Weapon]);
+  }, [gameRound]);
 
   useEffect(() => {
     setScore1(0);
@@ -39,7 +38,8 @@ const Game = (props) => {
   const weaponSelected = (yourWeapon) => {
     setPlayer1Weapon(yourWeapon);
     const computerWeapon = getComputerMove();
-    setPlayer2Weapon(computerWeapon);
+	setPlayer2Weapon(computerWeapon);
+	setGameCounter(gameRound+1);
   };
 
   return (
